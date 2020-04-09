@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1210861744172332608}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: wallCheck
   m_TagString: Untagged
   m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
@@ -44,9 +44,9 @@ GameObject:
   - component: {fileID: 4164387182999940419}
   - component: {fileID: 4164387182999940417}
   - component: {fileID: 833784330}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Snake
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -137,7 +137,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!70 &4164387182999940419
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -186,5 +186,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 3
-  speed: 4
+  speed: 2
   wallCheck: {fileID: 1210861744172332608}

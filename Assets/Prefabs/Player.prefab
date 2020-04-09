@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 255887898}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: GroundCheck
   m_TagString: Untagged
   m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
@@ -40,9 +40,10 @@ GameObject:
   m_Component:
   - component: {fileID: 421361693}
   - component: {fileID: 9104804839379454830}
-  m_Layer: 0
+  - component: {fileID: 832510437}
+  m_Layer: 11
   m_Name: Trigger
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -77,6 +78,18 @@ CapsuleCollider2D:
   m_Offset: {x: 0.030774593, y: -0.35394788}
   m_Size: {x: 0.7585058, y: 1.4370799}
   m_Direction: 0
+--- !u!114 &832510437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421361692}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42915efde6aa304c8beeaa1e3282825, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2038542995
 GameObject:
   m_ObjectHideFlags: 0
@@ -86,7 +99,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2038542996}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SpawnAttack
   m_TagString: Untagged
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
@@ -101,7 +114,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2038542995}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.18, z: 0}
+  m_LocalPosition: {x: 0.27, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 5359551084739070037}
@@ -121,7 +134,7 @@ GameObject:
   - component: {fileID: 5359551084739070039}
   - component: {fileID: 5359551084739070024}
   - component: {fileID: 910081260}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -266,8 +279,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 5
   jumpForce: 650
-  helth: 6
+  health: 6
   groundCheck: {fileID: 255887898}
-  attackRate: 0
-  spawnAttack: {fileID: 0}
-  attackPrefab: {fileID: 0}
+  attackRate: 0.5
+  spawnAttack: {fileID: 2038542996}
+  attackPrefab: {fileID: 8484420824487756334, guid: 830de3899bcdf3a429d2a5f3c1110a8e,
+    type: 3}
